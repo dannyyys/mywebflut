@@ -36,9 +36,13 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.white,
                   iconSize: 60,
                   onPressed: () {
-                    Navigator.push(
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Work()),
+                    // );
+                    Navigator.pushNamed(
                       context,
-                      MaterialPageRoute(builder: (context) => Work()),
+                      '/projects',
                     );
                   },
                 ))
