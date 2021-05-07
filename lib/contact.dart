@@ -66,6 +66,7 @@ class Contact extends StatelessWidget {
                         )),
                   ),
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       // Row(
                       //   mainAxisAlignment: MainAxisAlignment.center,
