@@ -54568,7 +54568,7 @@ $C:"$0",
 $R:0,
 $S:2}
 F.BJ.prototype={
-K:function(a,b){return new S.rR(new V.AR(null),P.aE(["/projects",new F.T1(),"/projects/schfinder",new F.T2(),"/contact",new F.T3()],t.bi,t.gd),"Flutter Demo",X.ac0(null,C.cx),!1,null)}}
+K:function(a,b){return new S.rR(new V.AR(null),P.aE(["/projects",new F.T1(),"/projects/schfinder",new F.T2(),"/contact",new F.T3()],t.bi,t.gd),"Ying Sheng",X.ac0(null,C.cx),!1,null)}}
 F.T1.prototype={
 $1:function(a){return new E.oQ(null)},
 $S:318}

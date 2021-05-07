@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/contact': (context) => Contact(),
       },
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Ying Sheng',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
