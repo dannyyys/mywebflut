@@ -67,25 +67,25 @@ class Contact extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          IconButton(
-                            icon: const Icon(Icons.phone),
-                            color: Colors.white,
-                            iconSize: 50,
-                            onPressed: () {},
-                          ),
-                          Text(
-                            "+65 9322 1161",
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontFamily: 'Agne',
-                            ),
-                          )
-                        ],
-                      ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.center,
+                      //   children: <Widget>[
+                      //     IconButton(
+                      //       icon: const Icon(Icons.phone),
+                      //       color: Colors.white,
+                      //       iconSize: 50,
+                      //       onPressed: () {},
+                      //     ),
+                      //     Text(
+                      //       "+65 9322 1161",
+                      //       style: const TextStyle(
+                      //         color: Colors.white,
+                      //         fontSize: 20.0,
+                      //         fontFamily: 'Agne',
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                       SizedBox(
                         height: 60,
                         width: 300,
@@ -118,25 +118,25 @@ class Contact extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          IconButton(
-                            icon: const Icon(Icons.mail_rounded),
-                            color: Colors.white,
-                            iconSize: 50,
-                            onPressed: () {},
-                          ),
-                          Text(
-                            "yeow0067@e.ntu.edu.sg",
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontFamily: 'Agne',
-                            ),
-                          )
-                        ],
-                      ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.center,
+                      //   children: <Widget>[
+                      //     IconButton(
+                      //       icon: const Icon(Icons.mail_rounded),
+                      //       color: Colors.white,
+                      //       iconSize: 50,
+                      //       onPressed: () {},
+                      //     ),
+                      //     Text(
+                      //       "yeow0067@e.ntu.edu.sg",
+                      //       style: const TextStyle(
+                      //         color: Colors.white,
+                      //         fontSize: 20.0,
+                      //         fontFamily: 'Agne',
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                     ],
                   )
                 ],
