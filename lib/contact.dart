@@ -52,7 +52,6 @@ class Contact extends StatelessWidget {
             contactBody(),
             Container(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 250,
@@ -68,25 +67,25 @@ class Contact extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.center,
-                      //   children: <Widget>[
-                      //     IconButton(
-                      //       icon: const Icon(Icons.phone),
-                      //       color: Colors.white,
-                      //       iconSize: 50,
-                      //       onPressed: () {},
-                      //     ),
-                      //     Text(
-                      //       "+65 9322 1161",
-                      //       style: const TextStyle(
-                      //         color: Colors.white,
-                      //         fontSize: 20.0,
-                      //         fontFamily: 'Agne',
-                      //       ),
-                      //     )
-                      //   ],
-                      // ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        // children: <Widget>[
+                        //   IconButton(
+                        //     icon: const Icon(Icons.phone),
+                        //     color: Colors.white,
+                        //     iconSize: 50,
+                        //     onPressed: () {},
+                        //   ),
+                        //   Text(
+                        //     "+65 9322 1161",
+                        //     style: const TextStyle(
+                        //       color: Colors.white,
+                        //       fontSize: 20.0,
+                        //       fontFamily: 'Agne',
+                        //     ),
+                        //   )
+                        // ],
+                      ),
                       SizedBox(
                         height: 60,
                         width: 300,
