@@ -88,6 +88,9 @@ class Contact extends StatelessWidget {
                         //   )
                         // ],
                       ),
+                      SizedBox(
+                        height: 10,
+                      ),
                       FittedBox(
                         child: SizedBox(
                           height: 60,
