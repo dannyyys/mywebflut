@@ -50,62 +50,66 @@ class schFinderPage extends StatelessWidget {
                       );
                     },
                   )),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: SizedBox(
-                  width: 1000,
-                  height: 100,
-                  child: DefaultTextStyle(
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 50.0,
-                      fontFamily: 'Agne',
-                    ),
-                    child: AnimatedTextKit(
-                      totalRepeatCount: 1,
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                          "schFinder Demo:",
-                          speed: Duration(milliseconds: 45),
-                        ),
-                      ],
-                      onTap: () {
-                        print("Tap Event");
-                      },
+              FittedBox(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: SizedBox(
+                    width: 1000,
+                    height: 100,
+                    child: DefaultTextStyle(
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 50.0,
+                        fontFamily: 'Agne',
+                      ),
+                      child: AnimatedTextKit(
+                        totalRepeatCount: 1,
+                        animatedTexts: [
+                          TypewriterAnimatedText(
+                            "schFinder Demo:",
+                            speed: Duration(milliseconds: 45),
+                          ),
+                        ],
+                        onTap: () {
+                          print("Tap Event");
+                        },
+                      ),
                     ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: SizedBox(
-                  height: 80,
-                  width: 200,
-                  child: Material(
-                    borderRadius: BorderRadius.circular(25.0),
-                    color: Colors.transparent,
-                    child: InkWell(
+              FittedBox(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: SizedBox(
+                    height: 80,
+                    width: 200,
+                    child: Material(
                       borderRadius: BorderRadius.circular(25.0),
-                      hoverColor: Colors.green,
-                      onTap: _launchSchFinder,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          IconButton(
-                            icon: const Icon(Icons.send_rounded),
-                            color: Colors.white,
-                            iconSize: 50,
-                            onPressed: _launchSchFinder,
-                          ),
-                          Text(
-                            "Source code",
-                            style: const TextStyle(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(25.0),
+                        hoverColor: Colors.green,
+                        onTap: _launchSchFinder,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            IconButton(
+                              icon: const Icon(Icons.send_rounded),
                               color: Colors.white,
-                              fontSize: 20.0,
-                              fontFamily: 'Agne',
+                              iconSize: 50,
+                              onPressed: _launchSchFinder,
                             ),
-                          )
-                        ],
+                            Text(
+                              "Source code",
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontFamily: 'Agne',
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),

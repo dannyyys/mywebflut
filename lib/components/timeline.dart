@@ -124,15 +124,15 @@ class Time extends StatelessWidget {
               //   padding: const EdgeInsets.all(8.0),
               //   child: Text('opposite\ncontents'),
               // ),
-              contents: Container(
-                //alignment: Alignment.center,
-                padding: const EdgeInsets.only(top: 25),
-                height: 100,
-                width: 500,
-                child: Material(
-                  color: Colors.white70,
-                  borderRadius: BorderRadius.circular(25.0),
-                  child: FittedBox(
+              contents: FittedBox(
+                child: Container(
+                  //alignment: Alignment.center,
+                  padding: const EdgeInsets.only(top: 25),
+                  height: 100,
+                  width: 500,
+                  child: Material(
+                    color: Colors.white70,
+                    borderRadius: BorderRadius.circular(25.0),
                     child: InkWell(
                       borderRadius: BorderRadius.circular(25.0),
                       hoverColor: Colors.green,

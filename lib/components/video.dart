@@ -62,14 +62,16 @@ class _VideoAppState extends State<VideoApp> {
                       '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}'),
                   SizedBox(width: 10),
                   Icon(animatedVolumeIcon(volume)),
-                  Slider(
-                    value: volume,
-                    min: 0,
-                    max: 1,
-                    onChanged: (_volume) => setState(() {
-                      volume = _volume;
-                      _controller.setVolume(_volume);
-                    }),
+                  FittedBox(
+                    child: Slider(
+                      value: volume,
+                      min: 0,
+                      max: 1,
+                      onChanged: (_volume) => setState(() {
+                        volume = _volume;
+                        _controller.setVolume(_volume);
+                      }),
+                    ),
                   ),
                   Spacer(),
                   IconButton(
