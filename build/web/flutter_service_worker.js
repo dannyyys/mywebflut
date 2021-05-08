@@ -21,13 +21,16 @@ const RESOURCES = {
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
 "assets/packages/youtube_player_flutter/assets/speedometer.webp": "50448630e948b5b3998ae5a5d112622b",
 "assets/videos/schoolFinder3.mp4": "827f3be830ee79a0fd4e76abfe1cec93",
+"chickfavicon.png": "3d2e9c2030c8933df20cbabe36c73046",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"icons/android-chrome-192x192.png": "d1caf1545cfa3c9cfffcdefe2bf9d779",
+"icons/android-chrome-512x512.png": "4d3e68d3bb07f3eb3219d2eaf7106cdd",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "aba184908858499af3689362f9f6fdc8",
-"/": "aba184908858499af3689362f9f6fdc8",
+"index.html": "0da19c4d5bacfc0878f916f2e9cc839d",
+"/": "0da19c4d5bacfc0878f916f2e9cc839d",
 "main.dart.js": "71989952cbaa9ae18df9a67eec716e86",
-"manifest.json": "9e6b0a2a243f54a87cd379a0c62c97ee",
+"manifest.json": "cbc3a2902fc02cbed608d33e9937641b",
 "version.json": "247ea2d97c7da15a983ccf00157d2341"
 };
 
