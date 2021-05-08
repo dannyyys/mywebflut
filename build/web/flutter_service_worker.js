@@ -3,7 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "47b1bfc75a286a1a3423501fb93b9bbc",
+  "assets/AssetManifest.json": "35e0a4cd92371bf66fd273ca8eb64818",
+"assets/assets/images/1012371-new-leafeon-wallpaper-1920x1080-for-hd.jpg": "b015f1ff6a3b199990ff37070f09b027",
 "assets/assets/images/atik-sulianami-Ko9JTVSt6Ok-unsplash.jpg": "9ad52ed1bda26ff2d13865e45a8aa3ae",
 "assets/assets/images/nasa-1lfI7wkGWZ4-unsplash.jpg": "fb77e0b1f5ce9f6f7aed72893cf10222",
 "assets/assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg": "1d801dd5a6a5e44b7503e433b3a540b5",
@@ -23,8 +24,8 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "2f3e08d8d72cbaedacc25d28cd7040d4",
-"/": "2f3e08d8d72cbaedacc25d28cd7040d4",
+"index.html": "2db1ade2ddb1db89cbf1c3ea2368d329",
+"/": "2db1ade2ddb1db89cbf1c3ea2368d329",
 "main.dart.js": "71989952cbaa9ae18df9a67eec716e86",
 "manifest.json": "36eaa581431e1e27e27a86ef94e3f81a",
 "version.json": "247ea2d97c7da15a983ccf00157d2341"
