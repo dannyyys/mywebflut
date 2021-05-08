@@ -65,7 +65,7 @@ class Work extends StatelessWidget {
                       '/contact',
                     );
                   },
-                ))
+                )),
           ],
         ),
       ),

@@ -35,19 +35,21 @@ class Time extends StatelessWidget {
               //   child: Text('opposite\ncontents'),
               // ),
               contents: Card(
-                child: Container(
-                  padding: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () {
-                      //link
-                    },
-                    child: Text(
-                      'MySQL\nDatabase system for online shopping platform',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
+                child: FittedBox(
+                  child: Container(
+                    padding: const EdgeInsets.all(8.0),
+                    child: InkWell(
+                      onTap: () {
+                        //link
+                      },
+                      child: Text(
+                        'MySQL\nDatabase system for online shopping platform',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
                       ),
                     ),
                   ),
@@ -74,17 +76,19 @@ class Time extends StatelessWidget {
             ),
             TimelineTile(
               oppositeContents: Card(
-                child: Container(
-                  padding: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: _launchOodp,
-                    child: Text(
-                      'StarsPlanner\nCourse registration application',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
+                child: FittedBox(
+                  child: Container(
+                    padding: const EdgeInsets.all(8.0),
+                    child: InkWell(
+                      onTap: _launchOodp,
+                      child: Text(
+                        'StarsPlanner\nCourse registration application',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
                       ),
                     ),
                   ),
@@ -128,27 +132,29 @@ class Time extends StatelessWidget {
                 child: Material(
                   color: Colors.white70,
                   borderRadius: BorderRadius.circular(25.0),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(25.0),
-                    hoverColor: Colors.green,
-                    onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //       builder: (context) => schFinderPage()),
-                      // );
-                      Navigator.pushNamed(
-                        context,
-                        '/projects/schfinder',
-                      );
-                    },
-                    child: Text(
-                      'schFinder\nSchool finding mobile application',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
+                  child: FittedBox(
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(25.0),
+                      hoverColor: Colors.green,
+                      onTap: () {
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => schFinderPage()),
+                        // );
+                        Navigator.pushNamed(
+                          context,
+                          '/projects/schfinder',
+                        );
+                      },
+                      child: Text(
+                        'schFinder\nSchool finding mobile application',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
                       ),
                     ),
                   ),
@@ -175,17 +181,19 @@ class Time extends StatelessWidget {
             ),
             TimelineTile(
               oppositeContents: Card(
-                child: Container(
-                  padding: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: _launchEZstate,
-                    child: Text(
-                      'EZstate\nProperty analysis forum',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
+                child: FittedBox(
+                  child: Container(
+                    padding: const EdgeInsets.all(8.0),
+                    child: InkWell(
+                      onTap: _launchEZstate,
+                      child: Text(
+                        'EZstate\nProperty analysis forum',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
                       ),
                     ),
                   ),

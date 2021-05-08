@@ -80,16 +80,18 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: press,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Text(
-          title.toUpperCase(),
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
+    return FittedBox(
+      child: InkWell(
+        onTap: press,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Text(
+            title.toUpperCase(),
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
           ),
         ),
       ),

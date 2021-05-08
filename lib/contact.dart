@@ -53,16 +53,18 @@ class Contact extends StatelessWidget {
             Container(
               child: Column(
                 children: [
-                  Container(
-                    height: 250,
-                    width: 250,
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        //borderRadius: BorderRadius.circular(50),
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/profile.jpg"),
-                          //fit: BoxFit.cover,
-                        )),
+                  FittedBox(
+                    child: Container(
+                      height: 250,
+                      width: 250,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          //borderRadius: BorderRadius.circular(50),
+                          image: DecorationImage(
+                            image: AssetImage("assets/images/profile.jpg"),
+                            //fit: BoxFit.cover,
+                          )),
+                    ),
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -86,34 +88,36 @@ class Contact extends StatelessWidget {
                         //   )
                         // ],
                       ),
-                      SizedBox(
-                        height: 60,
-                        width: 300,
-                        child: Material(
-                          borderRadius: BorderRadius.circular(25.0),
-                          color: Colors.transparent,
-                          child: InkWell(
+                      FittedBox(
+                        child: SizedBox(
+                          height: 60,
+                          width: 300,
+                          child: Material(
                             borderRadius: BorderRadius.circular(25.0),
-                            hoverColor: Colors.green,
-                            onTap: _launchTele,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                IconButton(
-                                  icon: const Icon(Icons.send_rounded),
-                                  color: Colors.white,
-                                  iconSize: 50,
-                                  onPressed: _launchTele,
-                                ),
-                                Text(
-                                  "https://t.me/Dannyyys",
-                                  style: const TextStyle(
+                            color: Colors.transparent,
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(25.0),
+                              hoverColor: Colors.green,
+                              onTap: _launchTele,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  IconButton(
+                                    icon: const Icon(Icons.send_rounded),
                                     color: Colors.white,
-                                    fontSize: 20.0,
-                                    fontFamily: 'Agne',
+                                    iconSize: 50,
+                                    onPressed: _launchTele,
                                   ),
-                                )
-                              ],
+                                  Text(
+                                    "https://t.me/Dannyyys",
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20.0,
+                                      fontFamily: 'Agne',
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
