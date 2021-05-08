@@ -25,48 +25,50 @@ class Work extends StatelessWidget {
           image: AssetImage("assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg"),
           fit: BoxFit.cover,
         )),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            CustomAppBar(),
-            Container(
-                alignment: Alignment.center,
-                child: IconButton(
-                  icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                  color: Colors.white,
-                  iconSize: 60,
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => HomeScreen()),
-                    // );
-                    Navigator.pushNamed(
-                      context,
-                      '/',
-                    );
-                  },
-                )),
-            //Spacer(),
-            timeBody(),
-            Time(),
-            Container(
-                alignment: Alignment.center,
-                child: IconButton(
-                  icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                  color: Colors.white,
-                  iconSize: 60,
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Contact()),
-                    // );
-                    Navigator.pushNamed(
-                      context,
-                      '/contact',
-                    );
-                  },
-                )),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              CustomAppBar(),
+              Container(
+                  alignment: Alignment.center,
+                  child: IconButton(
+                    icon: const Icon(Icons.keyboard_arrow_up_rounded),
+                    color: Colors.white,
+                    iconSize: 60,
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => HomeScreen()),
+                      // );
+                      Navigator.pushNamed(
+                        context,
+                        '/',
+                      );
+                    },
+                  )),
+              //Spacer(),
+              timeBody(),
+              Time(),
+              Container(
+                  alignment: Alignment.center,
+                  child: IconButton(
+                    icon: const Icon(Icons.keyboard_arrow_down_rounded),
+                    color: Colors.white,
+                    iconSize: 60,
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Contact()),
+                      // );
+                      Navigator.pushNamed(
+                        context,
+                        '/contact',
+                      );
+                    },
+                  )),
+            ],
+          ),
         ),
       ),
     );
