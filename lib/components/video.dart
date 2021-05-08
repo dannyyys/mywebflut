@@ -44,7 +44,7 @@ class _VideoAppState extends State<VideoApp> {
               allowScrubbing: true,
               padding: EdgeInsets.all(10),
             ),
-            ResponsiveRow(
+            Row(
               children: <Widget>[
                 IconButton(
                   icon: Icon(_controller.value.isPlaying
@@ -58,16 +58,10 @@ class _VideoAppState extends State<VideoApp> {
                     });
                   },
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 12),
-                  child: Text(
-                      '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}'),
-                ),
+                Text(
+                    '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}'),
                 SizedBox(width: 10),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8),
-                  child: Icon(animatedVolumeIcon(volume)),
-                ),
+                Icon(animatedVolumeIcon(volume)),
                 FittedBox(
                   child: Slider(
                     value: volume,
