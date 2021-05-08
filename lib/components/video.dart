@@ -1,5 +1,6 @@
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive/responsive.dart';
 
 class VideoApp extends StatefulWidget {
   @override
@@ -31,66 +32,70 @@ class _VideoAppState extends State<VideoApp> {
     return Container(
       color: Colors.grey[350],
       width: 1000,
-      child: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            if (_controller.value.isInitialized) ...[
-              AspectRatio(
-                aspectRatio: _controller.value.aspectRatio,
-                child: VideoPlayer(_controller),
-              ),
-              VideoProgressIndicator(
-                _controller,
-                allowScrubbing: true,
-                padding: EdgeInsets.all(10),
-              ),
-              Row(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(_controller.value.isPlaying
-                        ? Icons.pause
-                        : Icons.play_arrow),
+      child: Column(
+        children: <Widget>[
+          if (_controller.value.isInitialized) ...[
+            AspectRatio(
+              aspectRatio: _controller.value.aspectRatio,
+              child: VideoPlayer(_controller),
+            ),
+            VideoProgressIndicator(
+              _controller,
+              allowScrubbing: true,
+              padding: EdgeInsets.all(10),
+            ),
+            ResponsiveRow(
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(_controller.value.isPlaying
+                      ? Icons.pause
+                      : Icons.play_arrow),
+                  onPressed: () {
+                    setState(() {
+                      _controller.value.isPlaying
+                          ? _controller.pause()
+                          : _controller.play();
+                    });
+                  },
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: Text(
+                      '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}'),
+                ),
+                SizedBox(width: 10),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Icon(animatedVolumeIcon(volume)),
+                ),
+                FittedBox(
+                  child: Slider(
+                    value: volume,
+                    min: 0,
+                    max: 1,
+                    onChanged: (_volume) => setState(() {
+                      volume = _volume;
+                      _controller.setVolume(_volume);
+                    }),
+                  ),
+                ),
+                Spacer(),
+                IconButton(
+                    icon: Icon(
+                      Icons.loop,
+                      color: _controller.value.isLooping
+                          ? Colors.green
+                          : Colors.black,
+                    ),
                     onPressed: () {
                       setState(() {
-                        _controller.value.isPlaying
-                            ? _controller.pause()
-                            : _controller.play();
+                        _controller.setLooping(!_controller.value.isLooping);
                       });
-                    },
-                  ),
-                  Text(
-                      '${convertToMinutesSeconds(videoPosition)} / ${convertToMinutesSeconds(videoLength)}'),
-                  SizedBox(width: 10),
-                  Icon(animatedVolumeIcon(volume)),
-                  FittedBox(
-                    child: Slider(
-                      value: volume,
-                      min: 0,
-                      max: 1,
-                      onChanged: (_volume) => setState(() {
-                        volume = _volume;
-                        _controller.setVolume(_volume);
-                      }),
-                    ),
-                  ),
-                  Spacer(),
-                  IconButton(
-                      icon: Icon(
-                        Icons.loop,
-                        color: _controller.value.isLooping
-                            ? Colors.green
-                            : Colors.black,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _controller.setLooping(!_controller.value.isLooping);
-                        });
-                      }),
-                ],
-              )
-            ],
+                    }),
+              ],
+            )
           ],
-        ),
+        ],
       ),
     );
   }

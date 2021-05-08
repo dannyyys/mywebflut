@@ -31,20 +31,24 @@ class HomeScreen extends StatelessWidget {
             ),
             Container(
                 alignment: Alignment.center,
-                child: IconButton(
-                  icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                  color: Colors.white,
-                  iconSize: 60,
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => Work()),
-                    // );
-                    Navigator.pushNamed(
-                      context,
-                      '/projects',
-                    );
-                  },
+                child: Material(
+                  color: Colors.transparent,
+                  child: IconButton(
+                    hoverColor: Colors.grey[800],
+                    icon: const Icon(Icons.keyboard_arrow_down_rounded),
+                    color: Colors.white,
+                    iconSize: 60,
+                    onPressed: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Work()),
+                      // );
+                      Navigator.pushNamed(
+                        context,
+                        '/projects',
+                      );
+                    },
+                  ),
                 ))
           ],
         ),

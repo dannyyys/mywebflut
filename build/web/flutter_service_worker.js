@@ -15,7 +15,7 @@ const RESOURCES = {
 "assets/assets/images/uriel-soberanes-MxVkWPiJALs-unsplash.jpg": "4a31bfab58bd9d7f36db695d011b2d7e",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "1c979a3ae70a16d54d3c667b8119278d",
+"assets/NOTICES": "80d372af321a3abf447a73d0606791c2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
@@ -27,9 +27,9 @@ const RESOURCES = {
 "icons/android-chrome-512x512.png": "4d3e68d3bb07f3eb3219d2eaf7106cdd",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "53d13b650f31f7c0dd2b3a5c47a53158",
-"/": "53d13b650f31f7c0dd2b3a5c47a53158",
-"main.dart.js": "3111a1b7b8dfd3bf1a516613ede78e24",
+"index.html": "6ccb60c93d5514ef41ab3898e8ab8266",
+"/": "6ccb60c93d5514ef41ab3898e8ab8266",
+"main.dart.js": "6ab513e65b12ffe88119c0b23b478dc3",
 "manifest.json": "d3a7d69a00c0fb1a871b3061e3f431b2",
 "version.json": "247ea2d97c7da15a983ccf00157d2341"
 };

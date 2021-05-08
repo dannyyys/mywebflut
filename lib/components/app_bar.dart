@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/responsive.dart';
 import 'package:mywebflut/components/timeline.dart';
 import 'package:mywebflut/components/video.dart';
 import 'package:mywebflut/components/youtube.dart';
@@ -80,8 +81,12 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
+    return Material(
+      borderRadius: BorderRadius.circular(25.0),
+      color: Colors.transparent,
       child: InkWell(
+        hoverColor: Colors.grey[800],
+        borderRadius: BorderRadius.circular(25.0),
         onTap: press,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
