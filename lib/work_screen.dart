@@ -49,6 +49,7 @@ class Work extends StatelessWidget {
                   )),
               //Spacer(),
               timeBody(),
+              // Container(color: Colors.white12, child: Time()),
               Time(),
               Container(
                   alignment: Alignment.center,
