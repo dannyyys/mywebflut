@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mywebflut/components/video.dart';
-import 'package:mywebflut/components/youtube.dart';
 import 'package:mywebflut/contact.dart';
 import 'package:mywebflut/home_screen.dart';
 import 'package:mywebflut/schFinderPage.dart';
 import 'package:mywebflut/work_screen.dart';
-import 'package:timelines/timelines.dart';
 
 void main() {
   runApp(MyApp());

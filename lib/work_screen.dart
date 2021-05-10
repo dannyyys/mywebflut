@@ -1,15 +1,7 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-
 import 'package:mywebflut/components/app_bar.dart';
-import 'package:mywebflut/components/body.dart';
 import 'package:mywebflut/components/timeBody.dart';
 import 'package:mywebflut/components/timeline.dart';
-import 'package:mywebflut/components/video.dart';
-import 'package:mywebflut/components/youtube.dart';
-import 'package:mywebflut/contact.dart';
-import 'package:mywebflut/home_screen.dart';
 
 class Work extends StatelessWidget {
   @override

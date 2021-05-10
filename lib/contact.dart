@@ -1,11 +1,7 @@
 import 'dart:html' as html;
-
 import 'package:flutter/material.dart';
-
 import 'package:mywebflut/components/app_bar.dart';
 import 'package:mywebflut/components/contactBody.dart';
-import 'package:mywebflut/home_screen.dart';
-import 'package:mywebflut/work_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 String resume =

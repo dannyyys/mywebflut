@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mywebflut/schFinderPage.dart';
 import 'package:timelines/timelines.dart';
 import 'package:url_launcher/url_launcher.dart';
 
