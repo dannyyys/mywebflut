@@ -12,6 +12,11 @@ void _launchOodp() async =>
         ? await launch("https://github.com/dannyyys/StarsPlannerFinal")
         : throw 'Could not launch';
 
+
+void _launchWildBakes() async =>
+    await canLaunch("https://github.com/dannyyys/wild-bakes-landing-page")
+        ? await launch("https://github.com/dannyyys/wild-bakes-landing-page")
+        : throw 'Could not launch';
 class Time extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -298,6 +303,63 @@ class Time extends StatelessWidget {
             //     child: Text('contents'),
             //   ),
             // ),
+            node: TimelineNode(
+              indicator: DotIndicator(
+                color: Colors.yellow[200],
+                size: 40,
+              ),
+              startConnector: SolidLineConnector(
+                color: Colors.yellow[200],
+                thickness: 10,
+              ),
+              endConnector: SolidLineConnector(
+                color: Colors.yellow[200],
+                thickness: 10,
+              ),
+            ),
+          ),
+          SizedBox(
+            //line
+            height: 50.0,
+            child: SolidLineConnector(
+              color: Colors.yellow[200],
+              thickness: 10,
+            ),
+          ),
+          TimelineTile(
+            // oppositeContents: Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Text('opposite\ncontents'),
+            // ),
+            contents: FittedBox(
+              child: Container(
+                //alignment: Alignment.center,
+                padding: const EdgeInsets.only(top: 25),
+                height: 100,
+                width: 500,
+                child: Material(
+                  //color: Colors.white70,
+                  color: Colors.blueGrey[800],
+                  borderRadius: BorderRadius.circular(25.0),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(25.0),
+                    hoverColor: Colors.blueGrey[600],
+                    onTap: _launchWildBakes,
+                    
+                    child: Text(
+                      'Wild Bakes\nWebsite for a home-based bakery',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.yellow[400],
+                        fontFamily: 'Agne',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             node: TimelineNode(
               indicator: DotIndicator(
                 color: Colors.yellow[200],
