@@ -17,6 +17,11 @@ void _launchWildBakes() async =>
     await canLaunch("https://github.com/dannyyys/wild-bakes-landing-page")
         ? await launch("https://github.com/dannyyys/wild-bakes-landing-page")
         : throw 'Could not launch';
+
+        void _launchCrazy() async =>
+    await canLaunch("https://crazyworkshop.yeowys.com/")
+        ? await launch("https://crazyworkshop.yeowys.com/")
+        : throw 'Could not launch';
 class Time extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -360,6 +365,64 @@ class Time extends StatelessWidget {
                 ),
               ),
             ),
+            node: TimelineNode(
+              indicator: DotIndicator(
+                color: Colors.yellow[200],
+                size: 40,
+              ),
+              startConnector: SolidLineConnector(
+                color: Colors.yellow[200],
+                thickness: 10,
+              ),
+              endConnector: SolidLineConnector(
+                color: Colors.yellow[200],
+                thickness: 10,
+              ),
+            ),
+          ),
+          SizedBox(
+            //line
+            height: 50.0,
+            child: SolidLineConnector(
+              color: Colors.yellow[200],
+              thickness: 10,
+            ),
+          ),
+          TimelineTile(
+            oppositeContents: FittedBox(
+              child: Container(
+                //alignment: Alignment.center,
+                padding: const EdgeInsets.only(top: 25),
+                height: 100,
+                width: 500,
+                child: Material(
+                  //color: Colors.white70,
+                  color: Colors.blueGrey[800],
+                  borderRadius: BorderRadius.circular(25.0),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(25.0),
+                    hoverColor: Colors.blueGrey[600],
+                    onTap: _launchCrazy,
+                    child: Text(
+                      'Crazy button workshop\nMini browser game made with socket',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.yellow[400],
+                        fontFamily: 'Agne',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            // contents: Card(
+            //   child: Container(
+            //     padding: EdgeInsets.all(8.0),
+            //     child: Text('contents'),
+            //   ),
+            // ),
             node: TimelineNode(
               indicator: DotIndicator(
                 color: Colors.yellow[200],
