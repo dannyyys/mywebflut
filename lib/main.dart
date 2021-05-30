@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mywebflut/contact.dart';
 import 'package:mywebflut/home_screen.dart';
 import 'package:mywebflut/schFinderPage.dart';
+import 'package:mywebflut/underConstruction.dart';
 import 'package:mywebflut/work_screen.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/projects': (context) => Work(),
         '/projects/schfinder': (context) => schFinderPage(),
         '/contact': (context) => Contact(),
+        '/underConstruction' : (context) => Construction(),
       },
       debugShowCheckedModeBanner: false,
       title: 'Ying Sheng',

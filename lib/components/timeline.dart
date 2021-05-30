@@ -12,16 +12,16 @@ void _launchOodp() async =>
         ? await launch("https://github.com/dannyyys/StarsPlannerFinal")
         : throw 'Could not launch';
 
-
 void _launchWildBakes() async =>
     await canLaunch("https://github.com/dannyyys/wild-bakes-landing-page")
         ? await launch("https://github.com/dannyyys/wild-bakes-landing-page")
         : throw 'Could not launch';
 
-        void _launchCrazy() async =>
+void _launchCrazy() async =>
     await canLaunch("https://crazyworkshop.yeowys.com/")
         ? await launch("https://crazyworkshop.yeowys.com/")
         : throw 'Could not launch';
+
 class Time extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,12 @@ class Time extends StatelessWidget {
                   child: InkWell(
                     borderRadius: BorderRadius.circular(25.0),
                     hoverColor: Colors.blueGrey[600],
-                    onTap: _launchOodp,
+                    onTap: () {
+                      Navigator.pushNamed(
+                        context,
+                        '/underConstruction',
+                      );
+                    },
                     child: Text(
                       'MySQL\nOnline shopping database',
                       textAlign: TextAlign.center,
@@ -287,7 +292,12 @@ class Time extends StatelessWidget {
                   child: InkWell(
                     borderRadius: BorderRadius.circular(25.0),
                     hoverColor: Colors.blueGrey[600],
-                    onTap: _launchEZstate,
+                    onTap: () {
+                      Navigator.pushNamed(
+                        context,
+                        '/underConstruction',
+                      );
+                    },
                     child: Text(
                       'EZstate\nProperty analysis forum',
                       textAlign: TextAlign.center,
@@ -350,7 +360,6 @@ class Time extends StatelessWidget {
                     borderRadius: BorderRadius.circular(25.0),
                     hoverColor: Colors.blueGrey[600],
                     onTap: _launchWildBakes,
-                    
                     child: Text(
                       'Wild Bakes\nWebsite for a home-based bakery',
                       textAlign: TextAlign.center,
