@@ -7,18 +7,10 @@ class CustomAppBar extends StatelessWidget {
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-          //color: Colors.white.withOpacity(0.9),
           ),
       child: Row(
         children: <Widget>[
           SizedBox(width: 5),
-          // FlatButton(
-          //   color: Colors.white,
-          //   child: Text('Pop!'),
-          //   onPressed: () {
-          //     Navigator.pop(context);
-          //   },
-          // ),
           Spacer(),
           MenuItem(
             title: "Home",
@@ -33,10 +25,6 @@ class CustomAppBar extends StatelessWidget {
           MenuItem(
             title: "Projects",
             press: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => Work()),
-              // );
               Navigator.pushNamed(
                 context,
                 '/projects',
@@ -46,10 +34,6 @@ class CustomAppBar extends StatelessWidget {
           MenuItem(
             title: "Contact",
             press: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => Contact()),
-              // );
               Navigator.pushNamed(
                 context,
                 '/contact',
