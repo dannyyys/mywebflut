@@ -18,14 +18,6 @@ class Body extends StatelessWidget {
                 fontSize: 50,
               ),
             ),
-            // Text(
-            //   "Undergraduate, Nanyang Technological University\nComputer Science Year 3\nI love birds.",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 30,
-            //   ),
-            // ),
             SizedBox(
               width: 1000,
               height: 100,
