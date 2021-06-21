@@ -30,12 +30,7 @@ class constructionBody extends StatelessWidget {
               ),
               
             ),
-            // Icon(
-            //   Icons.construction,
-            //   color: Colors.white,
-            //   size: 24.0,
-
-            // ),
+    
           ],
         ),
       ),

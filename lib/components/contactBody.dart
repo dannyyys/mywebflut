@@ -10,22 +10,7 @@ class contactBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            // Text(
-            //   "Yeow Ying Sheng",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 50,
-            //   ),
-            // ),
-            // Text(
-            //   "Undergraduate, Nanyang Technological University\nComputer Science Year 3",
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 30,
-            //   ),
-            // ),
+  
             SizedBox(
               width: 1000,
               height: 100,
