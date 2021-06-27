@@ -29,10 +29,7 @@ class Construction extends StatelessWidget {
                     color: Colors.white,
                     iconSize: 60,
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => HomeScreen()),
-                      // );
+     
                       Navigator.pushNamed(
                       context,
                       '/projects',

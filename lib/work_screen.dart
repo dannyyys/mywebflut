@@ -29,19 +29,16 @@ class Work extends StatelessWidget {
                     color: Colors.white,
                     iconSize: 60,
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => HomeScreen()),
-                      // );
+
                       Navigator.pushNamed(
                         context,
                         '/',
                       );
                     },
                   )),
-              //Spacer(),
+            
               timeBody(),
-              // Container(color: Colors.white12, child: Time()),
+
               Time(),
               Container(
                   alignment: Alignment.center,
@@ -50,10 +47,7 @@ class Work extends StatelessWidget {
                     color: Colors.white,
                     iconSize: 60,
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => Contact()),
-                      // );
+                 
                       Navigator.pushNamed(
                         context,
                         '/contact',
