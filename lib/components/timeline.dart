@@ -18,8 +18,8 @@ void _launchWildBakes() async =>
         : throw 'Could not launch';
 
 void _launchCrazy() async =>
-    await canLaunch("https://crazyworkshop.yeowys.com/")
-        ? await launch("https://crazyworkshop.yeowys.com/")
+    await canLaunch("https://crazy-button-workshop.vercel.app/")
+        ? await launch("https://crazy-button-workshop.vercel.app/")
         : throw 'Could not launch';
 
 class Time extends StatelessWidget {
