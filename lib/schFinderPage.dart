@@ -36,10 +36,7 @@ class schFinderPage extends StatelessWidget {
                     color: Colors.white,
                     iconSize: 60,
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => Work()),
-                      // );
+           
                       Navigator.pushNamed(
                         context,
                         '/projects',

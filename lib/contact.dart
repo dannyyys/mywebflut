@@ -82,22 +82,7 @@ class Contact extends StatelessWidget {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        // children: <Widget>[
-                        //   IconButton(
-                        //     icon: const Icon(Icons.phone),
-                        //     color: Colors.white,
-                        //     iconSize: 50,
-                        //     onPressed: () {},
-                        //   ),
-                        //   Text(
-                        //     "+65 9322 1161",
-                        //     style: const TextStyle(
-                        //       color: Colors.white,
-                        //       fontSize: 20.0,
-                        //       fontFamily: 'Agne',
-                        //     ),
-                        //   )
-                        // ],
+      
                       ),
                       SizedBox(
                         height: 10,
@@ -112,7 +97,7 @@ class Contact extends StatelessWidget {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(25.0),
                               hoverColor: Colors.green,
-                              // onTap: _launchTele,
+                             
                               onTap: _launchTele,
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -121,7 +106,7 @@ class Contact extends StatelessWidget {
                                     Icons.send_rounded,
                                     color: Colors.white,
                                     size: 50,
-                                    //onPressed: _launchTele,
+                                
                                   ),
                                   Text(
                                     "https://t.me/Dannyyys",
@@ -176,25 +161,7 @@ class Contact extends StatelessWidget {
                           ),
                         ),
                       ),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.center,
-                      //   children: <Widget>[
-                      //     IconButton(
-                      //       icon: const Icon(Icons.mail_rounded),
-                      //       color: Colors.white,
-                      //       iconSize: 50,
-                      //       onPressed: () {},
-                      //     ),
-                      //     Text(
-                      //       "yeow0067@e.ntu.edu.sg",
-                      //       style: const TextStyle(
-                      //         color: Colors.white,
-                      //         fontSize: 20.0,
-                      //         fontFamily: 'Agne',
-                      //       ),
-                      //     )
-                      //   ],
-                      // ),
+         
                     ],
                   )
                 ],
@@ -208,10 +175,7 @@ class Contact extends StatelessWidget {
                   color: Colors.white,
                   iconSize: 60,
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => HomeScreen()),
-                    // );
+              
                     Navigator.pushNamed(
                       context,
                       '/',

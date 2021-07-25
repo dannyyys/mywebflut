@@ -36,7 +36,7 @@ class Construction extends StatelessWidget {
                     );
                     },
                   )),
-              //Spacer(),
+              
               constructionBody(),
        
               

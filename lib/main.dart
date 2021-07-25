@@ -31,15 +31,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// Widget build(BuildContext context) {
-//   return Timeline.tileBuilder(
-//     builder: TimelineTileBuilder.fromStyle(
-//       contentsAlign: ContentsAlign.alternating,
-//       contentsBuilder: (context, index) => Padding(
-//         padding: EdgeInsets.only(left: 100),
-//         child: Text('Timeline Event $index'),
-//       ),
-//       itemCount: 10,
-//     ),
-//   );
-// }
