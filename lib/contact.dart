@@ -5,7 +5,7 @@ import 'package:mywebflut/components/contactBody.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 String resume =
-    "https://firebasestorage.googleapis.com/v0/b/spry-effect-288619.appspot.com/o/Yeow%20Ying%20Sheng%20resume%20for%20website.pdf?alt=media&token=ea853525-484f-4de9-8cb1-0de8edfa7132";
+    "https://firebasestorage.googleapis.com/v0/b/spry-effect-288619.appspot.com/o/YS%20resume%203.2.pdf?alt=media&token=29976a1f-d5d6-404a-a688-d440f8d4f6f5";
 
 void _launchTele() async => await canLaunch("https://t.me/Dannyyys")
     ? await launch("https://t.me/Dannyyys")

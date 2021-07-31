@@ -27,9 +27,9 @@ const RESOURCES = {
 "icons/android-chrome-512x512.png": "4d3e68d3bb07f3eb3219d2eaf7106cdd",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "c54e18b8b68d342dd00bf6aa05ae5f5f",
-"/": "c54e18b8b68d342dd00bf6aa05ae5f5f",
-"main.dart.js": "432100aa6923a67facf16804184534c3",
+"index.html": "95384af6b47b36a93bf18ca6ab147321",
+"/": "95384af6b47b36a93bf18ca6ab147321",
+"main.dart.js": "c6f7998b4701ebe127f11c870b9cfe0a",
 "manifest.json": "d3a7d69a00c0fb1a871b3061e3f431b2",
 "version.json": "247ea2d97c7da15a983ccf00157d2341"
 };
